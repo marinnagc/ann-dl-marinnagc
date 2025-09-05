@@ -111,7 +111,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/hsandmann.github.com
+      repository: arinnagc/ann-dl-marinnagc.github.com
       branch: main
   - search
   - badges
@@ -132,30 +132,28 @@ extra_javascript:
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
-# nav:
-#   - Home: index.md
-#   - This documentation: ./thisdocumentation/main.md
-#   - Roteiros:
-#     - Roteiro 1: ./roteiro1/main.md 
-#       - Notebook:
-#         - Data: ./roteiro1/exercises.ipynb
-#     - Roteiro 2: ./roteiro2/main.md
-#     - Roteiro 3: ./roteiro3/main.md
-#     - Roteiro 4: ./roteiro4/main.md
-#   - Notebooks:
-#     - Notebook 1 (Data):  ./roteiro1/exercises.ipynb
-#   - Projeto: ./projeto/main.md
-
 nav:
   - Home: index.md
-  - This documentation: thisdocumentation/main.md
+  - This documentation: ./thisdocumentation/main.md
   - Roteiros:
-    - Roteiro 1:
-        - Relatório: roteiro1/main.md
-        - Notebook: roteiro1/exercises.ipynb
-    - Roteiro 2:
-        - Relatório: roteiro2/main.md
-    - Roteiro 3:
-        - Relatório: roteiro3/main.md
-    - Roteiro 4:
-        - Relatório: roteiro4/main.md
+    - Roteiro 1: ./roteiro1/main.md 
+    - Roteiro 2: ./roteiro2/main.md
+    - Roteiro 3: ./roteiro3/main.md
+    - Roteiro 4: ./roteiro4/main.md
+  - Notebooks:
+    - Notebook 1 (Data):  ./roteiro1/exercises.ipynb
+  - Projeto: ./projeto/main.md
+
+# nav:
+#   - Home: index.md
+#   - This documentation: thisdocumentation/main.md
+#   - Roteiros:
+#     - Roteiro 1:
+#         - Relatório: roteiro1/main.md
+#         - Notebook: roteiro1/exercises.ipynb
+#     - Roteiro 2:
+#         - Relatório: roteiro2/main.md
+#     - Roteiro 3:
+#         - Relatório: roteiro3/main.md
+#     - Roteiro 4:
+#         - Relatório: roteiro4/main.md
