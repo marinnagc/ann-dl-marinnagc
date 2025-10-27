@@ -175,18 +175,7 @@ Durante o backpropagation:
 
 ---
 
-## Referências
-
-* Kingma, D.P., & Welling, M. (2013). *Auto-Encoding Variational Bayes.*
-* PyTorch Documentation – [VAE Tutorial](https://pytorch.org/tutorials/beginner/blitz/vae.html)
-* Chug, P. & Sharma, A. (2023). *VAEs in PyTorch – PyImageSearch.*
-
----
-
-
 ## Possíveis melhorias
-Ótimo que funcionou, Marinna! Agora, para responder sua pergunta com clareza:
-
 ---
 
 ### 1. **Aumentar a Dimensão do Espaço Latente**
@@ -388,3 +377,10 @@ Amostras totalmente novas geradas a partir de vetores ( z \sim \mathcal{N}(0, I)
 
 ---
 
+## Referências
+
+* Kingma, D.P., & Welling, M. (2013). *Auto-Encoding Variational Bayes.*
+* PyTorch Documentation – [VAE Tutorial](https://pytorch.org/tutorials/beginner/blitz/vae.html)
+* Chug, P. & Sharma, A. (2023). *VAEs in PyTorch – PyImageSearch.*
+
+---
