@@ -3,3 +3,4 @@ env/
 .cache/
 .vscode/
 target/
+/Exercises/Projects/RegressionLots/data/lots.csv
