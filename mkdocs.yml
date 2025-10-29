@@ -135,7 +135,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - This documentation: thisdocumentation/main.md
-  - Exercícios Individuais:
+  - Exercícios:
     - Data:
         - Relatório: roteiro1/main.md
         - Notebook: roteiro1/exercises.ipynb
@@ -145,7 +145,7 @@ nav:
         - Relatório: roteiro3/main.md
     - VAE:
         - Relatório: roteiro4/main.md
-  - Projetos em Grupo:
+  - Projetos:
     - Classification: 
         - Relatório: classification/main.md
     - Regression Lots: 

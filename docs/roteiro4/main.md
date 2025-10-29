@@ -13,20 +13,18 @@ O **VAE** é um tipo de **autoencoder probabilístico**, ou seja, ele aprende a 
 
 ### Estrutura geral
 
-* **Encoder:** recebe uma imagem e produz dois vetores —
-  a média ( \mu ) e o logaritmo da variância ( \log\sigma^2 ) da distribuição latente.
-* **Reparametrização:** garante que o processo de amostragem seja diferenciável,
-  usando ( z = \mu + \sigma \cdot \varepsilon ), com ( \varepsilon \sim \mathcal{N}(0, 1) ).
-* **Decoder:** reconstrói a imagem original a partir de ( z ).
+* **Encoder:** recebe uma imagem e produz dois vetores — a média ($\mu$) e o logaritmo da variância ($\log\sigma^2$) da distribuição latente.
+* **Reparametrização:** garante que o processo de amostragem seja diferenciável, usando $z = \mu + \sigma \cdot \varepsilon$, com $\varepsilon \sim \mathcal{N}(0, 1)$.
+* **Decoder:** reconstrói a imagem original a partir de $z$.
 * **Loss total:**
-  [
-  L = \text{Loss de Reconstrução} + \text{KL Divergência}
-  ]
-  onde:
 
+$$
+L = \text{Loss de Reconstrução} + \text{KL Divergência}
+$$
+
+  onde:
   * A **reconstrução (BCE)** mede o quão parecida é a saída com a entrada.
-  * A **KL Divergência** força o espaço latente a seguir uma distribuição normal padrão,
-    criando um espaço contínuo e suave para gerar novas amostras.
+  * A **KL Divergência** força o espaço latente a seguir uma distribuição normal padrão, criando um espaço contínuo e suave para gerar novas amostras.
 
 ---
 
@@ -69,10 +67,10 @@ Implementado de forma direta e eficiente em **PyTorch**, com codificação modul
 
 Durante o forward pass:
 
-1. $x \to (\mu, \log\sigma^2)$ — encoder  
-2. $(\mu, \sigma) \to z = \mu + \sigma\varepsilon$ — reparametrização  
-3. $z \to \hat{x}$ — decoder  
-4. $L = L_{rec} + L_{KL}$
+1. `x → (μ, log σ²)` — Encoder: mapeia a entrada para média e log‑variância.  
+2. `(μ, σ) → z = μ + σ · ε`, com `ε ~ N(0, 1)` — Reparametrização (amostragem diferenciável).  
+3. `z → x̂` — Decoder: reconstrói a entrada a partir de `z`.  
+4. `L = L_rec + L_KL` — Loss total: perda de reconstrução (`L_rec`, ex.: BCE) + divergência KL (`L_KL`).
 
 Durante o backpropagation:
 
