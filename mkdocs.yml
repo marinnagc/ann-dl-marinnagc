@@ -139,17 +139,12 @@ nav:
     - Data:
         - Relatório: roteiro1/main.md
         - Notebook: roteiro1/exercises.ipynb
-    - Perceptron:
-        - Relatório: roteiro2/main.md
-    - MLP:
-        - Relatório: roteiro3/main.md
-    - VAE:
-        - Relatório: roteiro4/main.md
+    - Perceptron: roteiro2/main.md
+    - MLP: roteiro3/main.md
+    - VAE: roteiro4/main.md
   - Projetos:
-    - Classification: 
-        - Relatório: classification/main.md
-    - Regression Lots: 
-        - Relatório: regression/main.md
+    - Classification: roteiro5/main.md
+    - Regression Lots: roteiro6/main.md
 
 # nav:
 #   - Home: index.md
