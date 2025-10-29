@@ -137,25 +137,12 @@ nav:
   - This documentation: thisdocumentation/main.md
   - Exercícios:
     - Data:
-        - Relatório: roteiro1/main.md
-        - Notebook: roteiro1/exercises.ipynb
-    - Perceptron: roteiro2/main.md
-    - MLP: roteiro3/main.md
-    - VAE: roteiro4/main.md
+        - Relatório: roteiro1-Data/main.md
+        - Notebook: roteiro1-Data/exercises.ipynb
+    - Perceptron: roteiro2-Perceptron/main.md
+    - MLP: roteiro3-MLP/main.md
+    - VAE: roteiro4-VAE/main.md
   - Projetos:
-    - Classification: roteiro5/main.md
-    - Regression Lots: roteiro6/main.md
-
-# nav:
-#   - Home: index.md
-#   - This documentation: ./thisdocumentation/main.md
-#   - Roteiros:
-#     - Roteiro 1: ./roteiro1/main.md 
-#     - Roteiro 2: ./roteiro2/main.md
-#     - Roteiro 3: ./roteiro3/main.md
-#     - Roteiro 4: ./roteiro4/main.md
-#   - Notebooks:
-#     - Notebook 1 (Data):  ./roteiro1/exercises.ipynb
-#   - Projeto: ./projeto/main.md
-
+    - Classification: classification/main.md
+    - Regression Lots: regression/main.md
 

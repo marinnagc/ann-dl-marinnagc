@@ -370,6 +370,10 @@ Amostras totalmente novas geradas a partir de vetores ( z \sim \mathcal{N}(0, I)
 | Complexidade | Simples e leve                  | Mais pesado, mas ainda eficiente |
 | Arquitetura  | Linear → ReLU → Linear          | Conv2d → ReLU → ConvTranspose2d  |
 
+Além disso, ao comparar os dois espaços latentes, observa-se que o referente ao MLP não separa tão bem as classe de cada
+número, justificando a maior dificuldade na reconstrução, mais borrões.
+Já no espaço latende do treinamento feito com CNN, as classes ficaram melhores separadas, o que pode ajudar a justificar a 
+maior nitidez nos dígitos.
 ---
 
 ## Conclusão sobre o CNN-VAE
