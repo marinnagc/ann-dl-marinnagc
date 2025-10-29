@@ -1,4 +1,4 @@
-# Template de Entrega
+# Disciplina: Artificial Neural Network and Deep Learning
 
 
 ???+ info inline end "Edição"
@@ -6,13 +6,13 @@
     2025.2
 
 
-## Grupo/Kit X
+## Relatórios, anotações, projetos e estudos
+Autora: Marinna Grigolli Cesar
 
-1. Marinna Grigolli Cesar
-1. Grupo
+### Grupo dos Projetos
     - Marinna Grigolli Cesar
-    - Nicholas
-    - Guilherme
+    - Nicholas Balkins
+    - Guilherme Paraíso
 
 
 
@@ -23,11 +23,12 @@
 
 ## Entregas
 
-- [x] Roteiro 1 - Data 05/09/2025
-- [ ] Roteiro 2
-- [ ] Roteiro 3
-- [ ] Roteiro 4
-- [ ] Projeto
+- [x] Data
+- [x] Perceptron
+- [x] MLP
+- [x] VAE
+- [x] Projeto 1 - Classification
+- [ ] Projeto 2 - Regression
 
 ## Diagramas
 

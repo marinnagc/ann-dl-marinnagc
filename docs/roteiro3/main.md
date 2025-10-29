@@ -7,82 +7,92 @@ Este relatório apresenta os resultados obtidos nos exercícios 1, 2, 3 e 4, que
 ## Exercício 1 - Forward e Backpropagation Manual
 
 **Configuração inicial:**
-- Entrada: \(x = [0.5, -0.2]\)
-- Saída esperada: \(y = 1.0\)
+- Entrada: $x = [0.5, -0.2]$
+- Saída esperada: $y = 1.0$
 - Pesos e vieses:
-  \[
-  W^{(1)} =
-  \begin{bmatrix}
-  0.3 & -0.1 \\
-  0.2 & 0.4
-  \end{bmatrix}, \quad
-  b^{(1)} = [0.1, -0.2]
-  \]
-  \[
-  W^{(2)} =
-  \begin{bmatrix}
-  0.5 \\
-  -0.3
-  \end{bmatrix}, \quad
-  b^{(2)} = 0.2
-  \]
-- Taxa de aprendizado: \(\eta = 0.3\)  
-- Função de ativação: \(\tanh\)  
+
+$$
+W^{(1)} =
+\begin{bmatrix}
+0.3 & -0.1 \\
+0.2 & 0.4
+\end{bmatrix},
+\quad
+b^{(1)} = [0.1, -0.2]
+$$
+
+$$
+W^{(2)} =
+\begin{bmatrix}
+0.5 \\
+-0.3
+\end{bmatrix},
+\quad
+b^{(2)} = 0.2
+$$
+
+- Taxa de aprendizado: $\eta = 0.3$  
+- Função de ativação: $\tanh$  
 - Função de custo: MSE
 
 ### Forward Pass
 - Pré-ativação camada oculta:  
-  \( z^{(1)} = [0.21, -0.33] \)
+  $z^{(1)} = [0.21, -0.33]$
 - Ativação camada oculta:  
-  \( h = [0.206966, -0.318521] \)
+  $h = [0.206966, -0.318521]$
 - Pré-ativação saída:  
-  \( z^{(2)} = 0.399039 \)
+  $z^{(2)} = 0.399039$
 - Saída final:  
-  \( \hat{y} = 0.379127 \)
+  $\hat{y} = 0.379127$
 - Função de perda:  
-  \( L = 0.192742 \)
+  $L = 0.192742$
 
 ### Backpropagation
 - Gradiente na saída:  
-  \( \delta^{(2)} = -0.531631 \)
+  $\delta^{(2)} = -0.531631$
 - Gradientes da camada de saída:  
-  \(\partial L/\partial W^{(2)} = [-0.110030, 0.169335]^T\),  
-  \(\partial L/\partial b^{(2)} = -0.531631\)
+  $\frac{\partial L}{\partial W^{(2)}} = [-0.110030, \ 0.169335]^T$,  
+  $\frac{\partial L}{\partial b^{(2)}} = -0.531631$
 - Gradiente na camada oculta:  
-  \( \delta^{(1)} = [-0.254429, \; 0.143308] \)
-- Gradientes da camada oculta:  
-  \[
-  \frac{\partial L}{\partial W^{(1)}} =
-  \begin{bmatrix}
-  -0.127215 & 0.071654 \\
-   0.050886 & -0.028662
-  \end{bmatrix}, \quad
-  \frac{\partial L}{\partial b^{(1)}} = [-0.254429, 0.143308]
-  \]
+  $\delta^{(1)} = [-0.254429, \; 0.143308]$
+- Gradientes da camada oculta:
+
+$$
+\frac{\partial L}{\partial W^{(1)}} =
+\begin{bmatrix}
+-0.127215 & 0.071654 \\
+0.050886 & -0.028662
+\end{bmatrix},
+\quad
+\frac{\partial L}{\partial b^{(1)}} = [-0.254429, \ 0.143308]
+$$
 
 ### Atualização dos Parâmetros
-Após o update com \(\eta = 0.3\):  
-\[
+Após o update com $\eta = 0.3$:
+
+$$
 W^{(2)} =
 \begin{bmatrix}
 0.533009 \\
 -0.350801
-\end{bmatrix}, \quad
+\end{bmatrix},
+\quad
 b^{(2)} = 0.359489
-\]
+$$
 
-\[
+$$
 W^{(1)} =
 \begin{bmatrix}
 0.338164 & -0.121496 \\
 0.184734 & 0.408598
-\end{bmatrix}, \quad
+\end{bmatrix},
+\quad
 b^{(1)} = [0.176329, -0.242992]
-\]
+$$
 
 ### Forward Após Atualização
-- Nova saída: \(\hat{y}' = 0.570172\)  
-- Novo erro: \(L' = 0.092376\)
+- Nova saída: $\hat{y}' = 0.570172$  
+- Novo erro: $L' = 0.092376$
 
 **Conclusão**: após uma única atualização, a perda caiu de **0.1927 → 0.0924**, mostrando que o backpropagation ajustou corretamente os parâmetros.
 

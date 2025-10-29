@@ -69,10 +69,10 @@ Implementado de forma direta e eficiente em **PyTorch**, com codificação modul
 
 Durante o forward pass:
 
-1. ( x \to (\mu, \log\sigma^2) ) — encoder
-2. ( (\mu, \sigma) \to z = \mu + \sigma\varepsilon ) — reparametrização
-3. ( z \to \hat{x} ) — decoder
-4. ( L = L_{rec} + L_{KL} )
+1. $x \to (\mu, \log\sigma^2)$ — encoder  
+2. $(\mu, \sigma) \to z = \mu + \sigma\varepsilon$ — reparametrização  
+3. $z \to \hat{x}$ — decoder  
+4. $L = L_{rec} + L_{KL}$
 
 Durante o backpropagation:
 
@@ -84,6 +84,7 @@ Durante o backpropagation:
 ## Curva de perda
 
 ![](imgs/loss_curve.png)
+![](imgs/loss_curve_with_val.png)
 
 > Observa-se uma queda progressiva e consistente da loss, demonstrando aprendizado estável e sem overfitting.
 
@@ -154,6 +155,11 @@ Durante o backpropagation:
 > As amostras são realistas e variadas, provando que o modelo aprendeu um espaço latente capaz de **gerar novos dígitos coerentes** com o domínio MNIST.
 
 ---
+### Espaço Latente
+
+![](imgs/latent_scatter.png)
+
+---
 
 ## Discussão
 
@@ -170,7 +176,6 @@ Durante o backpropagation:
 
 * O modelo foi capaz de aprender a **reconstruir e gerar** imagens coerentes de dígitos manuscritos.
 * Mesmo com uma arquitetura **simples e leve**, o desempenho foi eficaz.
-* A escolha de **espaço latente 2D** permitiu possível visualização futura com t-SNE.
 * O VAE apresentou comportamento esperado, equilibrando reconstrução com regularização.
 
 ---
@@ -267,14 +272,9 @@ transform = transforms.Compose([
 3. Use `hidden = 512` ou mais
 4. Trocar o MLP por CNNs
 
+## VAE com Arquitetura Convolucional (CNN-VAE)
 
-Claro! Aqui está o **complemento do seu roteiro/relatório** para incluir a versão **CNN-VAE**, destacando as diferenças em relação à arquitetura anterior e referenciando corretamente as imagens que você gerará ao rodar o `main2.py`.
-
----
-
-## Extensão: VAE com Arquitetura Convolucional (CNN-VAE)
-
-Após implementar o VAE simples com camadas totalmente conectadas (MLP), realizei uma segunda versão mais sofisticada do modelo: um **Variational Autoencoder com arquitetura convolucional**, o **CNN-VAE**.
+Variational Autoencoder com arquitetura convolucional, o **CNN-VAE**.
 
 ### Motivação
 
@@ -327,6 +327,7 @@ Durante as 20 épocas, a perda total caiu de forma estável, indicando aprendiza
 
 **Figura 4 – Curva de perda do CNN-VAE:**
 ![](vae_outputs_cnn/loss_curve.png)
+![](vae_outputs_cnn/loss_curve_with_val.png)
 
 ---
 
@@ -337,6 +338,8 @@ Durante as 20 épocas, a perda total caiu de forma estável, indicando aprendiza
 A figura abaixo mostra os dígitos reais (linha superior) e suas reconstruções pela CNN-VAE (linha inferior), após 20 épocas:
 
 **Figura 5 – Reconstruções do CNN-VAE (época 20):**
+
+
 ![](vae_outputs_cnn/recon_epoch_20.png)
 
 > As reconstruções são **mais nítidas, com contornos mais definidos** e melhor preservação de detalhes do dígito original em comparação ao modelo com MLP.
@@ -348,6 +351,8 @@ A figura abaixo mostra os dígitos reais (linha superior) e suas reconstruções
 Amostras totalmente novas geradas a partir de vetores ( z \sim \mathcal{N}(0, I) ):
 
 **Figura 6 – Amostras do CNN-VAE (época 20):**
+
+
 ![](vae_outputs_cnn/sample_epoch_20.png)
 
 > A qualidade visual é notavelmente melhor: os dígitos são **mais realistas, diversos e menos borrados**, mesmo com apenas 20 épocas de treinamento.

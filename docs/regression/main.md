@@ -1,4 +1,5 @@
 # Previsão de Receita Diária — LOTS 
+Feito por: Marinna Grigolli, Guilherme Paraíso e Nicholas Balkins
 
 ## Objetivo
 
