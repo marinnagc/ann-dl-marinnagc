@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# Perceptron do zero (sem classe) + GIF da reta a cada época – Exercícios 1 e 2
-
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation

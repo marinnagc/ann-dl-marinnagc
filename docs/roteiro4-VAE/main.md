@@ -1,5 +1,8 @@
 # Variational Autoencoder (VAE) – MNIST
 
+## CÓDIGOS EM:
+  https://github.com/marinnagc/ann-dl-marinnagc/tree/main/Exercises/VAE
+
 ## Objetivo
 
 O objetivo desta atividade foi **implementar, treinar e compreender um Variational Autoencoder (VAE)**, aplicando-o ao dataset **MNIST**.

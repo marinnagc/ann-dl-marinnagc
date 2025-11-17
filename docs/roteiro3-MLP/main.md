@@ -3,6 +3,9 @@
 Este relatório apresenta os resultados obtidos nos exercícios 1, 2, 3 e 4, que envolvem a implementação e avaliação de redes neurais do tipo Multi-Layer Perceptron (MLP) aplicadas a problemas de classificação binária e multiclasse.
 
 ---
+## CÓDIGOS EM:
+  https://github.com/marinnagc/ann-dl-marinnagc/tree/main/Exercises/MLP
+---
 
 ## Exercício 1 - Forward e Backpropagation Manual
 
