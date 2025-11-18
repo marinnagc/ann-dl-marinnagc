@@ -2,50 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hsandmann.github.io/documentation.template/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/classification/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/classification/copiados_do_repo_githubpages/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/classification/copiados_do_repo_githubpages/project1/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://hsandmann.github.io/documentation.template/regression/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/regression/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://hsandmann.github.io/documentation.template/regression/main/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://hsandmann.github.io/documentation.template/regression/main1/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://hsandmann.github.io/documentation.template/regression/main_antigo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://hsandmann.github.io/documentation.template/regression/plots_2024/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro1-Data/exercises/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro1-Data/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro2-Perceptron/exercises/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro2-Perceptron/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro3-MLP/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/roteiro4-VAE/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://hsandmann.github.io/documentation.template/thisdocumentation/main/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
 </urlset>
