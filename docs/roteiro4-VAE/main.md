@@ -1,7 +1,7 @@
 # Variational Autoencoder (VAE) – MNIST
 
 ## CÓDIGOS EM:
-  https://github.com/marinnagc/ann-dl-marinnagc/tree/main/Exercises/VAE
+  [](https://github.com/marinnagc/ann-dl-marinnagc/tree/main/Exercises/VAE)
 
 ## Objetivo
 

@@ -1,6 +1,6 @@
 # Relatório — Perceptron e suas Limitações
 ## CÓDIGO EM: 
-    https://github.com/marinnagc/ann-dl-marinnagc/blob/main/docs/roteiro2-Perceptron/exercises.py
+    [exercises.py — Código-fonte no GitHub](https://github.com/marinnagc/ann-dl-marinnagc/blob/main/docs/roteiro2-Perceptron/exercises.py)
 
 ## Parte 1 — Dados Linearmente Separáveis
 

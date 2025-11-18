@@ -1,7 +1,7 @@
 # Previsão de Receita Diária — LOTS
 
 ## CÓDIGO EM: 
-    https://github.com/marinnagc/ann-dl-marinnagc/blob/main/docs/regression/
+   [](https://github.com/marinnagc/ann-dl-marinnagc/blob/main/docs/regression/)
 
 **Feito por:** Marinna Grigolli, Guilherme Paraíso e Nicholas Balkins
 
