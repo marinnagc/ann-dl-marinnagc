@@ -145,4 +145,4 @@ nav:
   - Projetos:
     - Classification: classification/main.md
     - Regression Lots: regression/main.md
-
+    - Generative: generative/main.md
