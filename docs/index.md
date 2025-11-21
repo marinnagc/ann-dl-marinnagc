@@ -28,7 +28,10 @@ Autora: Marinna Grigolli Cesar
 - [x] MLP
 - [x] VAE
 - [x] Projeto 1 - Classification
-- [ ] Projeto 2 - Regression
+- [x] Projeto 2 - Regression
+- [x] Projeto 3 - Generative
+
+![Imagem](./image.png)
 
 ## Diagramas
 
